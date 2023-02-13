@@ -61,8 +61,12 @@ array.from beskrivelse HER: https://developer.mozilla.org/en-US/docs/Web/JavaScr
 */
 
 // din kode her
-const myArray = Array.from(purpleBalls)
-console.log(myArray)
+const purpleBallArray = Array.from(purpleBalls)
+console.log(purpleBallArray)
+
+purpleBallArray.map((myElement) => {
+    myElement.style.backgroundColor = 'red';
+})
 
 
 /* opgave 3.3
@@ -70,9 +74,10 @@ Brug myLiveList til at ændre h3 elementets, inden i purpleFigures, tekst til RE
 myElement.children[0].innerHTML til at ændre 1. child elements inner html.
 */
 
-
 // din kode her
-
+purpleBallArray.map((myElement) => {
+    myElement.style.color = 'red';
+})
 
 
 /* opgave 4
@@ -81,14 +86,31 @@ Du skal vælge element tags der giver mening i forbindelse med HTML5 semantisk t
 */
 
 const myData = {
-    name: 'tiger',
+    name: 'Tiger',
     image: 'assets/img/standard_tiger.jpg',
     description: 'En tiger er et stort, katteagtig rovdyr med orange og sort striber i pelsen og skarpe tænder og kløer.'
 };
 
 
 // din kode her
+const myCardElement = document.getElementById('opgaveFour');
+
+let myArticle = document.createElement('article');
+myArticle.classList.add('galleryCard');
+
+let myHeadline = document.createElement('h2');
+myHeadline.innerText = myData.name;
+
+let myImage = document.createElement('img');
+myImage.src = myData.image;
+myImage.alt = myData.name;
 
 
+let myP = document.createElement('p');
+myP.innerText = myData.description;
 
 
+myArticle.appendChild(myHeadline);
+myCardElement.appendChild(myArticle);
+myArticle.appendChild(myImage);
+myArticle.appendChild(myP);

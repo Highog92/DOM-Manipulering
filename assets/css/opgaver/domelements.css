@@ -15,10 +15,20 @@
 #redFigure {
   background-color: red;
 }
+
 #yellowFigure {
   background-color: rgb(255, 234, 3);
 }
 
 .purpleFigures {
   background-color: rgb(251, 0, 255);
+}
+
+.galleryCard {
+  width: 100%;
+}
+
+.galleryCard img {
+  width: 100%;
+
 }
