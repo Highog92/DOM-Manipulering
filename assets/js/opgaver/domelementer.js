@@ -51,10 +51,7 @@ Du skal finde alle elementer med klassen purpleFigures og console logge resultat
 
 // din kode her
 const purpleBalls = document.getElementsByClassName("purpleFigures myFigure")
-console.log(purpleFigures myFigure)
-
-const yellowBall = document.getElementById("yellowFigure")
-console.log(yellowBall)
+console.log(purpleBalls)
 
 
 /* opgave 3.2
@@ -64,6 +61,8 @@ array.from beskrivelse HER: https://developer.mozilla.org/en-US/docs/Web/JavaScr
 */
 
 // din kode her
+const myArray = Array.from(purpleBalls)
+console.log(myArray)
 
 
 /* opgave 3.3
