@@ -8,17 +8,21 @@ Du skal finde elementet med id="yellowFigure" og console logge det.
 */
 
 // din kode her
+// const redBall = document.getElementById("redFigure")
+// console.log(redBall)
 
+// const yellowBall = document.getElementById("yellowFigure")
+// console.log(yellowBall)
 
 /* opgave 1.2
 Du skal ændre baggrundsfarve på de to elementer du har fundet i opgave 1.1
 farven på elementerne skal være blå. brug evt. elelement.style.backgroundColor
 */
 
-
 // din kode her
+// document.getElementById("redFigure").style.backgroundColor = "blue";
 
-
+// document.getElementById("yellowFigure").style.backgroundColor = "blue";
 
 /* opgave 2.1
 Du skal oprette følgende HTML elementer i Elementet med id opgaveTwo.
@@ -26,9 +30,19 @@ Du skal oprette følgende HTML elementer i Elementet med id opgaveTwo.
 - et p med teksten: Jeg har løst opgave 2.1
 */
 
-
 // din kode her
 
+
+// let addHtmlTag1 = document.createElement('h2')
+// addHtmlTag1.innerText = 'Opgave 2.1 løsning'
+
+// let addHtmlTag2 = document.createElement('p')
+// addHtmlTag2.innerText = 'Jeg har løst opgave 2.1'
+// console.log(addHtmlTag1)
+
+// const opgave2 = document.getElementById('opgaveTwo')
+// opgave2.appendChild(addHtmlTag1)
+// opgave2.appendChild(addHtmlTag2)
 
 // opgave 3 liveHTML lists
 /* opgave 3.1
@@ -36,6 +50,11 @@ Du skal finde alle elementer med klassen purpleFigures og console logge resultat
 */
 
 // din kode her
+const purpleBalls = document.getElementsByClassName("purpleFigures myFigure")
+console.log(purpleFigures myFigure)
+
+const yellowBall = document.getElementById("yellowFigure")
+console.log(yellowBall)
 
 
 /* opgave 3.2
