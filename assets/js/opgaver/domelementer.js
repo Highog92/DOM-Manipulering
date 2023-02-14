@@ -110,7 +110,7 @@ let myP = document.createElement('p');
 myP.innerText = myData.description;
 
 
-myArticle.appendChild(myHeadline);
 myCardElement.appendChild(myArticle);
+myArticle.appendChild(myHeadline);
 myArticle.appendChild(myImage);
 myArticle.appendChild(myP);
